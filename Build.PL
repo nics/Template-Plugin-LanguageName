@@ -1,0 +1,25 @@
+use strict;
+use warnings;
+use Module::Build;
+
+my $builder = Module::Build->new(
+    module_name => 'Template::Plugin::LanguageName',
+    license => 'perl',
+    dist_author => [
+        'Nicolas Steenlant <nicolas.steenlant@ugent.be>'
+    ],
+    dist_version_from => 'lib/Template/Plugin/LanguageName.pm',
+    build_requires => {
+        'Software::License' => 0,
+        'Test::Exception' => 0,
+        'Test::More' => 0,
+    },
+    requires => {
+        'Locale::Codes::Language' => '3.18',
+        'Template' => '2.22',
+    },
+    create_license => 1,
+);
+
+$builder->create_build_script;
+
