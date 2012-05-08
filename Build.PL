@@ -18,6 +18,10 @@ my $builder = Module::Build->new(
         'Locale::Codes::Language' => '3.18',
         'Template' => '2.22',
     },
+    add_to_cleanup => [qw(
+        Template-Plugin-LanguageName-*
+    )],
+    create_makefile_pl => 'traditional',
     create_license => 1,
 );
 

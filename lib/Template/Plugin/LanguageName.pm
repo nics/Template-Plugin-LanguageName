@@ -11,11 +11,11 @@ Template::Plugin::LanguageName - Template filter to lookup the name for a ISO639
 
 =head1 VERSION
 
-Version 0.1
+Version 0.01
 
 =cut
 
-our $VERSION = '0.1';
+our $VERSION = '0.01';
 
 =head1 SYNOPSIS
 
