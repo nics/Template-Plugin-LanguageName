@@ -15,6 +15,7 @@ my $builder = Module::Build->new(
         'Test::More' => 0,
     },
     requires => {
+        'parent' => 0,
         'Locale::Codes::Language' => '3.18',
         'Template' => '2.22',
     },
